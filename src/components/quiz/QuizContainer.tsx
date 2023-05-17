@@ -191,7 +191,7 @@ const SumbitQuizBtn = styled.button`
 
 `
 
-const mapStateToProps = (state: any, ownProps: any) => {
+const mapStateToProps = (state: any) => {
     return {
         tempQuiz: state.tempQuiz,
         isFormAuthorized: state.isFormAuthorized,

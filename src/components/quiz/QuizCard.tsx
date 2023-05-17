@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
    }
 `
 
-const mapStateToProps = (state: any, ownProps: any) => {
+const mapStateToProps = (state: any) => {
     return {
         isFormAuthorized: state.isFormAuthorized,
         

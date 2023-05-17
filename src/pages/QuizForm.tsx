@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 
 // Interfaces
@@ -47,7 +46,7 @@ const FormContainer = styled.div`
     }
 `
 
-const mapStateToProps = (state: any, ownProps: any) => {
+const mapStateToProps = (state: any) => {
     return {
         isFormAuthorized: state.isFormAuthorized
     }

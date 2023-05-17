@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -11,7 +10,7 @@ import QuizListInterface from "../interfaces/QuizListInterface";
 import addButton from "../assets/add-button.json";
 
 // Actions
-import { deleteItem, addItem, deleteQuiz } from "../actions/QuizActions";
+import { deleteItem, deleteQuiz } from "../actions/QuizActions";
 import { setFormIsAuth } from "../actions/FormActions";
 
 // components
@@ -85,7 +84,7 @@ const Wrapper = styled.div `
         cursor: pointer;
     }
 `
-const mapStateToProps = (state: any, ownProps: QuizListInterface) => {
+const mapStateToProps = (state: any) => {
     return {
         quizes: state.quizes
     }

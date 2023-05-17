@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { connect } from "react-redux";
 
 // Components
 import QuizContainer from "../components/quiz/QuizContainer";
